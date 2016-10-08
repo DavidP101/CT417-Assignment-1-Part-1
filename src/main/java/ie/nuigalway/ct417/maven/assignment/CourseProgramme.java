@@ -43,10 +43,14 @@ public void addModule(Module m){
 }
 
 public void printModules(){
-    System.out.println("Course Name: "+this.getName());
+    System.out.println("Course Information");
+    System.out.println("Name: "+this.getName());
+    System.out.println("Start Date: "+this.getStartDate().toString());
+    System.out.println("End Date: "+this.getEndDate().toString());
     System.out.println("List of Modules:");
     for (int i=0; i<this.moduleList.size(); i++){
-        System.out.println(this.moduleList.get(i).getName());
+        System.out.println("Name"+this.moduleList.get(i).getName());
+        System.out.println("ID: "+this.moduleList.get(i).getID());
         this.moduleList.get(i).printStudents();
     }
 }

@@ -38,7 +38,11 @@ public void addStudent(Student s){
 public void printStudents(){
     System.out.println("List of Students:");
     for (int i=0; i<this.studentList.size(); i++){
-        System.out.println(this.studentList.get(i).getName());
+        System.out.println("Name: "+this.studentList.get(i).getName());
+        System.out.println("ID: "+this.studentList.get(i).getID());
+        System.out.println("Age: "+this.studentList.get(i).getAge());
+        System.out.println("DOB: "+this.studentList.get(i).getDateOfBirth());
+        System.out.println("Username: "+this.studentList.get(i).getUsername());
     }
 }
 }
