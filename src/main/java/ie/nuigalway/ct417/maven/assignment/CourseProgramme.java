@@ -49,7 +49,7 @@ public void printModules(){
     System.out.println("End Date: "+this.getEndDate().toString());
     System.out.println("List of Modules:");
     for (int i=0; i<this.moduleList.size(); i++){
-        System.out.println("Name"+this.moduleList.get(i).getName());
+        System.out.println("Name: "+this.moduleList.get(i).getName());
         System.out.println("ID: "+this.moduleList.get(i).getID());
         this.moduleList.get(i).printStudents();
     }
