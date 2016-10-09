@@ -43,7 +43,7 @@ public void addModule(Module m){
 }
 
 public String formattedDate(DateTime date){
-    return date.getDayOfYear()+"/"+date.getMonthOfYear()+"/"+date.getYear();
+    return date.getDayOfMonth()+"/"+date.getMonthOfYear()+"/"+date.getYear();
 }
 
 public void printModules(){
