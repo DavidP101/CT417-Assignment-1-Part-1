@@ -42,11 +42,15 @@ public void addModule(Module m){
     this.moduleList.add(m);
 }
 
+public String formattedDate(DateTime date){
+    return date.getDayOfYear()+"/"+date.getMonthOfYear()+"/"+date.getYear();
+}
+
 public void printModules(){
     System.out.println("Course Information");
     System.out.println("Name: "+this.getName());
-    System.out.println("Start Date: "+this.getStartDate().toString());
-    System.out.println("End Date: "+this.getEndDate().toString());
+    System.out.println("Start Date: "+formattedDate(getStartDate()));
+    System.out.println("End Date: "+formattedDate(getEndDate()));
     System.out.println("List of Modules:");
     for (int i=0; i<this.moduleList.size(); i++){
         System.out.println("Name: "+this.moduleList.get(i).getName());
